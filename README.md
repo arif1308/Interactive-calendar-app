@@ -1,16 +1,46 @@
-# React + Vite
+# Interactive Calendar App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A polished, interactive wall calendar component built with React + Vite.
 
-Currently, two official plugins are available:
+## Features
+- 🗓️ Wall calendar aesthetic with hero image
+- 📅 Day range selector (start & end date)
+- 📝 Date-specific notes with localStorage persistence
+- 🎨 Responsive design (Desktop & Mobile)
+- 🔴 SAT/SUN highlighted in red
+- 📌 Wall hanger UI effect
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React 18
+- Vite
+- CSS3 (Flexbox & Grid)
 
-## React Compiler
+## Notes Feature
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Each date or date range has its own separate note:
 
-## Expanding the ESLint configuration
+- **Single Date Note** — Click any date and write a note for that specific day
+- **Date Range Note** — Select a start date and end date, then write a note for that entire range
+- **Monthly Note** — If no date is selected, note is saved for the whole month
+- **Auto Save** — Notes are automatically saved in localStorage, so they persist even after page refresh
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Use Notes
+
+1. **Single date note** — Click any date on the calendar, then type your note
+2. **Date range note** — Click a start date, then click an end date, then type your note
+3. **Switch between dates** — Click a different date and the note will change to that date's note
+4. **Go back** — Click the same date again and your previous note will reappear
+5. **Monthly note** — Don't select any date and write a general note for the whole month
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Live Demo
+[Click Here](https://interactive-calendar-app.vercel.app)
+
+## Author
+Arif Siddique
